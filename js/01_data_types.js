@@ -1,5 +1,4 @@
 /*
-
 There are two type of datatypes in Javascript
     - Primitive Data Types (immutable, stored by value)
         - string
@@ -17,11 +16,9 @@ There are two type of datatypes in Javascript
         - Date
 
 Primitive Data types are stored in Stack while the Non-Primitive/Reference Data Types are stored in Heap
-
 */
 
 // 1. Primitive Data Types (Immutable, Stored by Value)
-
 let myName = "John"; // string
 let age = 30; // number
 let isAdult = true; // boolean
@@ -35,7 +32,6 @@ console.log(`The type of "state" is ==> ${typeof state}`);
 console.log(`The type of "education" is ==> ${typeof education}`);
 
 // 1.1. Numbers
-
 let a = 42; // integer
 let b = 42.5; // floating-point
 let c = 1e3; // 1000
@@ -46,12 +42,10 @@ let e = Infinity; // Infinity
 let bigNumber = 123456789012345678901234567890n;
 
 /*
-
 bigNumber cannot be added to normal number 
 for eg: 
 console.log(bigNumber + 2);  ❌
 console.log(bigNumber + 2n); ✅
-
 */
 
 console.log(`The type of "bigNumber" is ==> ${typeof bigNumber}`);
@@ -64,7 +58,6 @@ let string3 = `${string1} ${string2} World!`;
 console.log(`The resultant string literal is "${string3}"`);
 
 /* 
-
 Common methods in strings include
     - .toUpperCase()
     - .length
@@ -72,19 +65,15 @@ Common methods in strings include
     - .trim()
     - .slice()
     - .replace()  
-
 */
 
 // Symbol (used for unique identifiers)
-
 let sym1 = Symbol("id");
 let sym2 = Symbol("id");
 
 /*
-
 Since "Symbol" is for unique identifiers, therefore sym1 ≠ sym2
 so console.log(sym1 === sym2) will return `false`
-
 */
 
 console.log(`Are sym1 and sym2 equal? (sym1 === sym2) ==> ${sym1 === sym2}`);
@@ -108,7 +97,6 @@ console.log(`The Array "arr" is ==> ${arr}`);
 console.log(`The first value is ==> ${arr[0]}`);
 
 /* 
-
 Common methods in arrays include
     - push()
     - pop()
@@ -117,7 +105,6 @@ Common methods in arrays include
     - map()
     - filter()
     - reduce()   
-
 */
 
 // 2.3. Functions
